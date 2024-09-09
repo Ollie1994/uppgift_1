@@ -80,6 +80,7 @@ public class Main {
     }
 }
 // vi får inte in någon moms och vi betalar ingen moms
+//SE TILL ATT KOMMENTERA KODEN BÄTTRE, VAD KODEN GÖR OCH VARFÖR DEN GÖR SÅ.
 
 
 /*
