@@ -86,7 +86,10 @@ public class Main {
 /*
 
 PSEUDO KOD UPPGIFT 1
-
+PROCESS
+    Initiera saldo
+DISPLAY
+    saldo
 DISPLAY
     "Menu, please select one of the following"
     " val1: Betala ut löner till anställda, val2: Skapa ny faktura, val3: Betala en eller flera fakturor." Val4: Kolla saldo."
