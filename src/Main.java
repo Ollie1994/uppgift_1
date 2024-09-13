@@ -96,17 +96,18 @@ PROCESS
     felhantering
 ____________________
 Val1
+
 DISPLAY
     "Fråga hur många anställda han vill betala ut till"
 INPUT
-    User selects 1-intmax
+    User väljer hur många anställda han vill betala ut till
 PROCESS
     felhantering
     skapande av array med storlek(userinput)
 DISPLAY
     "Be användaren mata in summan på lönerna"
 INPUT
-    user inputs double tills han matat in array.length
+    user inputs doubles tills han matat in array.length
 PROCESS
     felhantering
     forloop som lägger in löner på positioner upp till
@@ -118,7 +119,7 @@ DISPLAY
     "Fråga användare om han vill öppna menyn igen eller avsluta programmet"
 INPUT
     user true/false
-    felhantering
+PROCESS
     looop back to menu.
 ___________________________________________________________
 DISPLAY
@@ -130,5 +131,48 @@ PROCESS
     felhantering
 ____________________
 Val2
+
 DISPLAY
+    "Ber user att mata in totala summan av fakturan
+INPUT
+    user inputs tot
+PROCESS
+    felhantering
+    programmet ska räkna ut moms 25%, brutto summa, netto summa
+    netto summan ska plussa på saldo.
+DISPLAY
+    "program ska skirva ut moms, brutto och netto summan.
+    "Fråga användare om han vill öppna menyn igen eller avsluta programmet true/false"
+INPUT
+    user true/false
+PROCESS
+    looop back to menu.
+____________________
+Val3
+
+DISPLAY
+    "be user att skriva in hur många fakturor hen vill betala"
+INPUT
+    User väljer hur många fakturor hen vill betala
+PROCESS
+    felhantering
+    skapande av array med storlek(userinput)
+DISPLAY
+    "Be användaren mata in summan på faturorna"
+INPUT
+    user inputs doubles tills han matat in array.length
+PROCESS
+    felhantering
+    forloop som lägger in fakturor på positioner upp till
+    array.length och plussar på alla fakturor i variabeln
+    double sum2.
+    Tot dras från saldo - moms
+DISPLAY
+    "tot -moms av fakturarna som ska dras från saldo."
+    "Fråga användare om han vill öppna menyn igen eller avsluta programmet"
+INPUT
+    user true/false
+PROCESS
+    looop back to menu.
+
  */
