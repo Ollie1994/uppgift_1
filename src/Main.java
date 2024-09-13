@@ -7,14 +7,14 @@ public class Main {
         System.out.println("Start saldo: " + saldo1.checkSaldo());
         //------------------------------------------------------------------------------
         boolean menu = true;
-        while (menu == true) {
+        while (menu == true) { //loop som gör att man kan fortsätta köra programmer efter varje val
             System.out.println("MENU \nVal 1 (Betala ut löner till anställda)\nVal 2 (Skapa en ny faktura)\nVal 3 (Betala en eller flera fakturor)\nVal 4 (Kolla kontosaldot)");
             Scanner sc = new Scanner(System.in);
             TryCatchMethods methods = new TryCatchMethods();
             int menyVal = methods.tryCatch1(); // tryCatch1
             System.out.println("Meny val: " + menyVal);
             //-------------------------------------------------------------------------------------
-            switch (menyVal) {
+            switch (menyVal) { // meny med 4 val
                 case 1: // Betala ut löner till anställda.
                     double[] aLöner;
                     System.out.println("Dags att välja hur många anställda du vill betala ut till!");
@@ -74,7 +74,7 @@ public class Main {
                     break;
             }
             System.out.println("Vill du öppna menyn igen true/false?");
-            menu = sc.nextBoolean();
+            menu = sc.nextBoolean(); // valet för att loopa tbx till menyn eller avsluta programmet
         }
         System.out.println("(Ool), Goodbye!");
     }
