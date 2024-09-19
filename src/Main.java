@@ -30,7 +30,7 @@ public class Main {
                     }
                     double sumMinusSkatt = sum * 0.7;
                     saldo1.withdraw(sum);
-                    System.out.println("Summan utbetalt från saldo: " + sum);
+                    System.out.println("Summan som ska betalas ut från saldo: " + sum);
                     System.out.println("Summan av löner som ska betalas ut till anställda (skatt borttagen): " + sumMinusSkatt);
                     System.out.println("New balance: " + saldo1.checkSaldo());
 
